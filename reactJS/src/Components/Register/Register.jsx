@@ -29,7 +29,7 @@ function Register() {
     };
     await axios
       .post(
-        "https://thawing-hollows-39647.herokuapp.com/user/register",
+        "http://localhost:3001/user/register",
         newUser,
         config
       )

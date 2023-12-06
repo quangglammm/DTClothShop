@@ -2,16 +2,18 @@ import axios from "axios";
 class CatagoryDataService {
     getAll() {
 
-        return axios.get('https://thawing-hollows-39647.herokuapp.com/category')
+        return axios.get("http://localhost:3001/category");
     }
     getAllDetail(typeId) {
-        return axios.get(`https://thawing-hollows-39647.herokuapp.com/category/${typeId}/category-detail`)
+        return axios.get(
+            `http://localhost:3001/category/${typeId}/category-detail`
+        );
     }
     getCataDetailById(detailId) {
-        return axios.get(`https://thawing-hollows-39647.herokuapp.com/category-detail/${detailId}`)
+        return axios.get(`http://localhost:3001/category-detail/${detailId}`);
     }
     getAllCataDetail() {
-        return axios.get('https://thawing-hollows-39647.herokuapp.com/product/category-detail')
+        return axios.get("http://localhost:3001/product/category-detail");
     }
 }
 export default new CatagoryDataService();
